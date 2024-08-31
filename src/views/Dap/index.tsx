@@ -31,7 +31,7 @@ export function Dap() {
 
     return (
         <div>
-            <Header headerVariant ='dap'/>
+            <Header/>
 
             <Container>
                 <TextCard variantText={"toLeft"} textToWrite={textA} dirImg={rocket} />
