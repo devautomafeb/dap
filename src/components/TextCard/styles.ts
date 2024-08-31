@@ -16,24 +16,17 @@ export const CardText = styled.div<TextVariantProps>`
     margin-top: 0;
     align-items: center;
     margin-top: 5%;
-    width:90vw;
+    background-color: ${(props) => props.theme.COLORS.gray100};
 
     ${(props) => (
         (props.variant == 'toLeft') ? (
             css`
-        border-radius: 0px 60px 0px 60px;
-        background-color: white;
         background-position: center;
-        box-shadow: 0 0 20px ${(props) => props.theme['--gray-800']};
         margin-bottom: 50px;`
         ) : (
             css`
         flex-direction: row-reverse;    
-        border-radius: 60px 0px 60px 0px;
-        background-color: white;
-        background-position: center;
-        box-shadow: 0 0 20px ${(props) => props.theme['--gray-800']};
-        margin-bottom: 50px;`
+        background-position: center;`
         ))
     }
     @media(max-width:768px){
@@ -50,25 +43,20 @@ export const CardText = styled.div<TextVariantProps>`
 `;
 
 export const Img = styled.img<TextVariantProps>`
-    height: 50vh;
-    border-radius: 0 60px 0 60px;
+    height: 70vh;
     margin: 2%;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10vw;
+    margin-left: 5vw;
 
 
     ${(props) => (
         (props.variant == 'toLeft') ? (
             css`
-        border-radius: 0px 60px 0px 60px;
-        background-color: white;
         background-position: center;
         margin-bottom: 50px;`
         ) : (
             css`
         flex-direction: row-reverse;    
-        border-radius: 60px 0px 60px 0px;
-        background-color: white;
         background-position: center;
         margin-bottom: 50px;`
         ))
@@ -78,7 +66,6 @@ export const Img = styled.img<TextVariantProps>`
         max-width:90vw;
         height:auto;
         margin: 0;
-        border-radius: 0 60px 0 60px;
         padding: 5px;
     }
 `;

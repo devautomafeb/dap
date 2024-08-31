@@ -1,28 +1,13 @@
 import styled, { css } from 'styled-components';
 
-import logoSurf from '../../assets/images/Logo.png';
-import logoArena from '../../assets/images/arenaLogo01.png';
-
-export type footerVariant = 'surf' | 'arena';
-
-interface footerVariantProps {
-    footerVariant: footerVariant;
-}
-
-const footerVariants = {
-    surf: logoSurf,
-    arena: logoArena,
-}
-
 export const FooterContainer = styled.div`
+   background-color:${(props) => props.theme.COLORS.pink};
     display: flex;
-    background-color: ${(props) => props.theme['--gray-800']};
-    height: 20vh;
+    height: 40vh;
     width: auto;
 `;
 
 export const FooterLogo = styled.div`
-    background-color: ${(props) => props.theme['--gray-800']};
     text-align: center;
     justify-content: center;
     position: relative;
@@ -55,26 +40,5 @@ box-sizing:border-box;
     margin: 0;
 `;
 
-export const FooterList = styled.li`
-    display: inline;
-    padding:10px;
-    text-decoration: none;
-    list-style: none;
-    color: ${(props) => props.theme['--gray-200']};
-    margin: 0;
-`
-export const FooterImg = styled.div<footerVariantProps>`
-     height: 100px;
-    width: auto;
-    margin-top:20px;
-    background-image:url(${(props) => footerVariants[props.footerVariant]});
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
-`
 
-export const Ul = styled.ul`
-    margin:0;
-`
 

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const WhatsappContainer = styled.div`
     position: fixed;
@@ -7,33 +7,29 @@ export const WhatsappContainer = styled.div`
     height: 70px;
     width: 70px;
     border-radius: 35px;
-    background-color: #64d772;
+    background-color: ${(props) => props.theme.COLORS.darkGray};
+    display: flex;
     align-items: center;
-    justify-items: center;
-    align-self: center;
+    justify-content: center;
     font-size: 25px;
     text-align: center;
     border: 5px solid white;
-    box-shadow: 0 0 40px var(--gray-800);
     color: white;
-`
 
-
-
+    :hover {
+        opacity:0.8;
+        cursor: pointer;
+    }
+`;
 
 export const FontH1 = styled.h1`
     color: white;
     margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-48%, -40%);
+    padding: 2px;
+    font-size: 38px; /* Ajuste o tamanho do ícone aqui */
+    :hover {
+        opacity:0.8;
+        cursor: pointer;
 
-    :hover{
-    background-color: #9fdca6;
-    cursor: pointer;
     }
-`
-
-
-
+`;

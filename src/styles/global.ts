@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
     font-style: normal;
   }
 
-  h2, h3{
+  h2, h3,h4, h5{
     font-family: "Arimo", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;

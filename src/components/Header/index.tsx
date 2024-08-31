@@ -1,28 +1,36 @@
-import { HeaderContainer, headerVariant, HeaderImg,HeaderSocial, HeaderTools, HeaderLogo } from "./styles";
+import { HeaderContainer, headerVariant, HeaderImg, HeaderSocial, HeaderTools, HeaderLogo, Image, StyledFaBars } from "./styles";
 import { Link } from "react-router-dom";
 
-import headerRight from '../../assets/images/header_right.png';
-import headerLeft from '../../assets/images/header_left.png';
+// Import images correctly
+import headerRight from '../../assets/images/headerRight.png'; // Adjust the path if necessary
+import headerLeft from '../../assets/images/headerLeft.png';
+
+
 
 interface HeaderProps {
-    headerVariant: headerVariant;
+    headerVariant: headerVariant; // Ensure headerVariant is a valid type or interface
 }
 
-export function Header(props: HeaderProps) {
+export function Header({ headerVariant }: HeaderProps) {
     return (
         <HeaderContainer>
+            <StyledFaBars />
             <HeaderSocial>
-                <img src={headerLeft} style={{ height: '100px' }} />
+                <a href='https://www.instagram.com/dap.marketing'>
+                    <Image src={headerLeft} alt="Header Left" style={{height:'25vh'}}/>
+                </a>
             </HeaderSocial>
 
             <HeaderLogo>
-                <HeaderImg headerVariant = {props.headerVariant} />
+                <HeaderImg headerVariant={headerVariant} />
+                <h3>We make marketing personal again</h3>
             </HeaderLogo>
 
             <HeaderTools>
-                <img src={headerRight} style={{ height: '100px' }} />
+            <a href='https://www.instagram.com/dap.marketing'>
+                    <Image src={headerRight} alt="Header Right" style={{height:'25vh'}}/>
+                </a>
             </HeaderTools>
-
         </HeaderContainer>
-    )
-} 
+    );
+}
