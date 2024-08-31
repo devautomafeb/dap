@@ -1,11 +1,9 @@
-import { HeaderContainer, headerVariant, HeaderImg, HeaderSocial, HeaderTools, HeaderLogo, Image, StyledFaBars } from "./styles";
+import { HeaderContainer, HeaderImg, HeaderSocial, HeaderTools, HeaderLogo, Image, StyledFaBars } from "./styles";
 import logoDAP from '../../assets/images/logo02.png';
 
 // Import images correctly
 import headerRight from '../../assets/images/headerRight.png'; // Adjust the path if necessary
 import headerLeft from '../../assets/images/headerLeft.png';
-
-
 
 export function Header() {
     return (

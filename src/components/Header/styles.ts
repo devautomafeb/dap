@@ -10,8 +10,6 @@ export const StyledFaBars = styled(FaBars)`
     color: ${(props) => props.theme.COLORS.darkGray};
     margin: 10px;
     cursor: pointer;
-
- 
 `;
 
 export const HeaderContainer = styled.div`
