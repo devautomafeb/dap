@@ -20,12 +20,11 @@ export function BlockView() {
 
                 <AdvicesContainer>
                     <FontAsH1>COMPETITORS</FontAsH1>
-                    <FontAsH4>
-                        Bark
-                        Byter
-                        The good marketer
-                        Gripped.
-                    </FontAsH4>
+                    <h4> Bark </h4>
+                    <h4> Byter </h4>
+                    <h4>The good marketer </h4>
+                    <h4> Gripped. </h4>
+                    
                 </AdvicesContainer>
 
                 <AdvicesContainer>
