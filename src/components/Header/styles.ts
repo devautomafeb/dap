@@ -1,16 +1,9 @@
 import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
-import logoDAP from '../../assets/images/logo02.png';
 
-export type headerVariant = 'dap' | 'dap_comemorative';
 
-interface HeaderVariantProps {
-    headerVariant: headerVariant;
-}
+export type headerVariant = 'dap' ;
 
-const headerVariants = {
-    dap: logoDAP,
-};
 
 export const StyledFaBars = styled(FaBars)`
     font-size: 24px;
@@ -73,12 +66,11 @@ export const HeaderSocial = styled.div`
     }
 `;
 
-export const HeaderImg = styled.div<HeaderVariantProps>`
+export const HeaderImg = styled.div`
     height: 80px;
     width: 80px;
     margin: auto;
     margin-top: 10vh;
-    background-image: url(${(props) => headerVariants[props.headerVariant]});
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

@@ -1,5 +1,5 @@
 import { HeaderContainer, headerVariant, HeaderImg, HeaderSocial, HeaderTools, HeaderLogo, Image, StyledFaBars } from "./styles";
-import { Link } from "react-router-dom";
+import logoDAP from '../../assets/images/logo02.png';
 
 // Import images correctly
 import headerRight from '../../assets/images/headerRight.png'; // Adjust the path if necessary
@@ -7,11 +7,7 @@ import headerLeft from '../../assets/images/headerLeft.png';
 
 
 
-interface HeaderProps {
-    headerVariant: headerVariant; // Ensure headerVariant is a valid type or interface
-}
-
-export function Header({ headerVariant }: HeaderProps) {
+export function Header() {
     return (
         <HeaderContainer>
             <StyledFaBars />
@@ -22,7 +18,9 @@ export function Header({ headerVariant }: HeaderProps) {
             </HeaderSocial>
 
             <HeaderLogo>
-                <HeaderImg headerVariant={headerVariant} />
+                <HeaderImg>
+                <img src={logoDAP} style={{height:'50px'}}/>
+                </HeaderImg>
                 <h3>We make marketing personal again</h3>
             </HeaderLogo>
 
